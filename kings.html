@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<title> Kings Music Newsletter Sign up</title>
+    <meta charset="utf-8">
+    <meta name="description" content="html5 and JavaScript kings music form">
+    <link rel = "stylesheet" href = "css/styles_form.css" media = "screen">
+
+
+
+<script>
+    alert ("Welcome to the Kings Music Store - Newsletter Signup")
+
+function validateForm() {
+if (document.forms[0].firstName.value == "") {
+     alert("First Name field cannot be empty.");
+     return false;
+} // end if
+if (document.forms[0].lastName.value == "") {
+     alert("Last Name field cannot be empty.");
+     return false;
+} // end if
+alert ("Thank You");
+return true;
+} // end function validateForm
+
+</script>
+
+
+
+</head>
+<body>
+
+
+<header>
+    <img src = "images/kingslogo.svg" width = "150" height = "150" alt = "kings logo">
+
+
+
+</header>
+
+
+    <h1> Kings Music Newsletter Signup Form</h1>
+        <p> Please fill in the details Below</p>
+
+
+<div id = "container">
+
+<!-- form to capture details and "post" to infotech server -->
+    <form method="post"
+              action="http://infotech.scu.edu.au/cgi-bin/echo_form"
+              onsubmit="return validateForm();">
+        <!-- captures first, last and email -->
+            <label for="firstName">First Name: </label>
+            <input type="text" name="firstName" id="firstName" size = "60">
+            <label for="lastName">Last Name: </label>
+            <input type="text" name="lastName" id="lastName" size = "60">
+            <label for="myEmail">E-mail:</label>
+            <input type="email" name="myEmail" id="myEmail" size = "60"> <br>
+
+        <!-- captures age Group -->
+
+        <h3>Select your age group:</h3><br>
+
+        <fieldset class = "col1">
+
+            <input class = "age" type="radio" name="ageGroup" id="15-25" value="15-25">
+            <p class = "agetext">15 - 25</p>
+            <br>
+            <input type="radio" name="ageGroup" id="26-35" value="26-35">
+            <p class = "agetext">26 - 35</p>
+
+        </fieldset>
+
+        <fieldset class="col2">
+
+            <input type="radio" name="ageGroup" id="36-45" value="36-45">
+            <p class = "agetext">36 - 45</p>
+            <input type="radio" name="ageGroup" id="46-55" value="46-55">
+            <p class = "agetext">46 - 55</p>
+            <input type="radio" name="ageGroup" id="55+" value="55+">
+            <p class = "agetext">55+</p>
+
+        </fieldset>
+        <!-- captures fav music -->
+
+        <h3>Select Your Musical Taste</h3>
+
+        <fieldset class = "col1">
+
+            <input class = "age" type="checkbox" name="musicTaste" id="Metal" value="Metal">
+            <p class = "agetext">Heavy Metal</p>
+            <br>
+            <input type="checkbox" name="musicTaste" id="Country" value="Country">
+            <p class = "agetext">Country</p>
+
+        </fieldset>
+
+        <fieldset class="col2">
+
+            <input type="checkbox" name="musicTaste" id="Classical" value="Classical">
+            <p class = "agetext">Classical</p>
+            <input type="checkbox" name="musicTaste" id="Rock" value="Rock">
+            <p class = "agetext"> Rock &amp; Roll,</p>
+            <input type="checkbox" name="musicTaste" id="Pop" value="Pop">
+            <p class = "agetext">Pop</p>
+
+        </fieldset>
+
+        <fieldset class = "col1">
+
+            <input class = "age" type="checkbox" name="musicTaste" id="Folk" value="Folk">
+            <p class = "agetext">Folk</p>
+            <br>
+            <input type="checkbox" name="musicTaste" id="Blues" value="Blues">
+            <p class = "agetext">Blues</p>
+
+        </fieldset>
+
+        <fieldset class="col2">
+
+        <input type="checkbox" name="musicTaste" id="Jazz" value="Jazz">
+        <p class = "agetext">Jazz</p>
+        <input type="checkbox" name="musicTaste" id="Disco" value="Disco">
+        <p class = "agetext"> Disco &amp; Roll,</p>
+        <input type="checkbox" name="musicTaste" id="Opera" value="Opera">
+        <p class = "agetext">Opera</p>
+        </fieldset>
+
+            <h3 style ="color: #ffffff">Comments:</h3><br>
+
+        <textarea name="comments" id="comments" cols="60" rows="3"> Enter your
+        comments here</textarea>
+
+        <!-- button with aligning div -->
+            <div class ="subrebuttons">
+                <input id = "mySubmit" type= "submit" value="Send information">
+                <input id = "myReset" type="reset">
+            </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>
