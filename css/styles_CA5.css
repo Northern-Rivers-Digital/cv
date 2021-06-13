@@ -1,0 +1,303 @@
+g* { box-sizing: border-box; }
+
+
+
+
+/*main body container with background image*/
+body           { margin:0;
+                 background-image: url(../images/background.jpg);
+                 background-repeat: no-repeat;
+                background-position: center;}
+
+#container    {
+                color: #797F8C;
+                min-width: 80%;
+                font-family: Verdana, Arial, sans-serif; }
+/* header top of page */
+
+header {
+
+            background-image: url(../images/banner.png);
+            background-position: center;
+
+
+            color: #254C54;
+            text-align: right;
+            padding: 020px;
+            border-bottom: .5px solid #000000;
+background-repeat: no-repeat;
+            height: 400px;
+            width: auto;}
+
+
+
+/* main navigation */
+
+
+nav     { float: left;
+          width: 160px;
+          font-weight: bold;
+          letter-spacing: 0.1em;
+          clear: left;}
+
+/* main nav enhancements */
+
+nav ul {list-style-type: none;
+          margin: 0px;
+          padding: 0; }
+
+
+nav a  { text-decoration: none;
+         padding: 20px;
+         margin-bottom: 1px;
+         border-bottom: 1px;
+         display: block;
+         background-color: #797F8C;
+         border-bottom: 1px solid #FFFFFF; }
+
+nav a:link { color: black; }
+nav a:visited { color: #FFFFFF; }
+nav a:hover { color: #254C54;
+background-color: #FFFFFF; }
+
+
+
+/* floats latest news and recent work to the right */
+aside { float: right;
+        width: 200px; }
+
+/* Footer of each page*/
+
+footer { font-size: .70em;
+         text-align: center;
+         color: #254C54;
+         background-color: #ffffff;
+         padding-top: 10px;
+         clear: both; }
+/* main section of page */
+
+main { margin: 0 210px 0 160px;
+       padding: 1px 10px 20px 10px;
+       background-image: url(../images/background.jpg);
+       background-repeat: no-repeat;
+       background-color: #ffffff;}
+
+/* H1 headding */
+
+ h1 { text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+}
+
+
+
+
+header a {font-size: 0.80em; }
+header a:link, header a:visited { color: #ffffff; }
+header a:focus, header a:hover { color: #eeeeee; }
+
+/* sets margin for main <p> */
+main p { margin: 20px; }
+
+/* makes H3 purple with main background image */
+
+main h3 { color: #254C54; }
+
+
+
+.floatright { margin: 10px;
+             float: right; }
+
+ aside h3 { padding-bottom: 2px;
+            border-bottom: 1px solid #000000;
+            margin: 10px;
+            font-size: 0.90em;
+            color: #254C54; }
+
+ .news { font-size: 0.80em;
+         margin: 10px; }
+
+
+.dlcontainer { padding-left: 5%;
+			   text-align: left;
+			   border: 1px solid;
+			   background-color: #F2F2F2 ;
+			   background-position: center;
+			   color: #797F8C;
+			   opacity: 0.8
+				}
+
+#h2hobbies {text-align: center;
+
+			font-size: 2em;
+            color: #254C54;
+			margin-top: 100px;
+			padding-top: 200px; 	}
+
+/* button on main section */
+.button { border-radius: 30px;
+          margin-bottom: 3em;
+          padding: 1em;
+          color: #FFFFFF;
+          background-color: #797F8C;
+          font-family: Arial, sans-serif;
+          font-size: 1em;
+          font-weight: bold;
+          text-align: center;
+          text-decoration: none;
+           }
+
+.button:link    { color : #FFFFFF; }
+.button:visited { color : #D8DCF2; }
+.button:hover   { color : #FFFFFF;
+                  background-color: #cc66cc; }
+
+/* hobby images */
+.hobimages {padding: 50px;
+            text-align: center;}
+
+/* table design */
+
+table {
+             border: 5px solid #797F8C;
+             width: 600px;
+             padding-top: 10px;
+             margin-top: 10px;
+             margin-bottom: 30px;
+             margin-left: 20px;
+                }
+
+/* table header and discription */
+
+ td, th {      border: 1px solid #cc66cc;
+              padding: 0.5em;
+              font-family: Arial, sans-serif;
+              text-align: left;
+              color: #797F8C; }
+
+td, th {      padding: 0.5em;
+              border-style: none;
+              font-family: Arial, sans-serif;
+              }
+
+/* caption header (above table) */
+
+ caption {      font-family: Verdana, sans-serif;
+               font-weight: bold;
+               font-size: 1.2em;
+               padding-bottom: 0.5em;
+               text-align: center;
+               color: #254C54;
+
+               }
+
+
+
+.altrow { background-color: #eaeaea; }
+
+tr:nth-of-type(even) { background-color: #eaeaea; }
+
+tr:first-of-type { background-color: #ffffff;
+                     color: #eaeaea; }
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+
+}
+
+.left, .right {
+  width: 25%;
+
+margin-left: 30px;
+}
+
+.middle {
+  width: 25%;
+  padding-left:35px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+.row {
+
+	color: #797F8C;
+font-family: Verdana, Arial, sans-serif;
+box-sizing: border-box;
+width: 600px;
+height: 400px;
+margin-left: 5%;
+margin-top:5%
+
+}
+
+.sig {font-family: Brush Script MT, Brush Script Std, cursive;
+			font-size: 1.5em;
+			margin-left: 20px;
+		  	}
+
+.hobbierow {
+
+		color: #797F8C;
+font-family: Verdana, Arial, sans-serif;
+box-sizing: border-box;
+width: 600px;
+height: 400px;
+margin-left: 5%;
+margin-top:5% }
+
+.left, .right {
+  width: 25%;
+
+}
+.hobphotos { margin-left: 12%;
+
+}
+
+form {
+ font-family: Arial, sans-serif;
+ padding: 10px;
+ }
+label {
+ width: 100px;
+ clear: left;
+ text-align: right;
+ padding-right: 10px;
+ margin-top: 10px;
+ margin-right: 100px; }
+input, textarea {
+
+	margin-right: 200px;
+	margin-bottom:5px;
+	display: block;
+	color: 797F8C;
+		float: right;
+		clear: right;
+		}
+#mySubmit { margin-left: 110px; }
+
+
+.formpos { margin-left: 120px; }
+
+input { display: block;
+        margin-bottom: 1em;
+}
+label { float: left;
+        width: 5em;
+        padding-right: 1em;
+        text-align: right;
+}
+#submit { margin-left: 7em; }
